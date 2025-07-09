@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="watch-wrapper">
+            <div class="watch-frame">
+                <div class="watch-face">
+                    <div class="time-display">
+                        <div class="time" id="time">00:00:00</div>
+                        <div class="date" id="date">MON, JAN 01</div>
+                        <div class="milliseconds" id="milliseconds">000</div>
+                    </div>
+                    <div class="watch-decorations">
+                        <div class="hour-marker" style="transform: rotate(0deg)"></div>
+                        <div class="hour-marker" style="transform: rotate(30deg)"></div>
+                        <div class="hour-marker" style="transform: rotate(60deg)"></div>
+                        <div class="hour-marker" style="transform: rotate(90deg)"></div>
+                        <div class="hour-marker" style="transform: rotate(120deg)"></div>
+                        <div class="hour-marker" style="transform: rotate(150deg)"></div>
+                        <div class="hour-marker" style="transform: rotate(180deg)"></div>
+                        <div class="hour-marker" style="transform: rotate(210deg)"></div>
+                        <div class="hour-marker" style="transform: rotate(240deg)"></div>
+                        <div class="hour-marker" style="transform: rotate(270deg)"></div>
+                        <div class="hour-marker" style="transform: rotate(300deg)"></div>
+                        <div class="hour-marker" style="transform: rotate(330deg)"></div>
+                    </div>
+                    <div class="center-dot"></div>
+                </div>
+                <div class="watch-band top"></div>
+                <div class="watch-band bottom"></div>
+            </div>
+        </div>
+        
+        <div class="google-search">
+            <div class="search-container">
+                <div class="google-logo">
+                    <span class="g-blue">G</span><span class="o-red">o</span><span class="o-yellow">o</span><span class="g-blue">g</span><span class="l-green">l</span><span class="e-red">e</span>
+                </div>
+                <form class="search-form" action="https://www.google.com/search" method="GET" target="_blank">
+                    <div class="search-input-container">
+                        <input type="text" name="q" class="search-input" placeholder="Search Google or type a URL" autocomplete="off">
+                        <input type="hidden" name="rlz" value="1C1ONGR_enIN1094IN1094">
+                        <input type="hidden" name="sourceid" value="chrome">
+                        <input type="hidden" name="ie" value="UTF-8">
+                        <button type="submit" class="search-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 21L16.514 16.506L21 21ZM19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Button in Top Left -->
+    <div class="theme-button-container">
+        <button class="theme-toggle-btn" onclick="toggleThemeSelector()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM18.894 6H16.5A5.5 5.5 0 0 0 12 10.5v3A5.5 5.5 0 0 0 16.5 18h2.394A7.466 7.466 0 0 1 12 19.5c-4.125 0-7.5-3.375-7.5-7.5S7.875 4.5 12 4.5a7.466 7.466 0 0 1 6.894 1.5z" fill="currentColor"/>
+            </svg>
+            Themes
+        </button>
+        
+        <div class="theme-dropdown" id="themeDropdown">
+            <div class="theme-buttons">
+                <button class="theme-btn" data-theme="black">Black</button>
+                <button class="theme-btn active" data-theme="pink">Pink</button>
+                <button class="theme-btn" data-theme="blue">Blue</button>
+                <button class="theme-btn" data-theme="green">Green</button>
+                <button class="theme-btn" data-theme="purple">Purple</button>
+                <button class="theme-btn" data-theme="red">Red</button>
+                <button class="theme-btn" data-theme="gold">Gold</button>
+                <button class="theme-btn" data-theme="silver">Silver</button>
+                <button class="theme-btn" data-theme="orange">Orange</button>
+                <button class="theme-btn" data-theme="cyan">Cyan</button>
+                <button class="theme-btn" data-theme="neon">Neon</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
